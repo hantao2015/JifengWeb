@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97C250E5-D25D-48BB-BD12-AAF3380F687D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaoChong.Web</RootNamespace>
+    <AssemblyName>MaoChong.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="hsopPlatform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\hsopPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="HsPlatform, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\HsPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheckCode\CodeImage.aspx" />
+    <Content Include="css\AspNetPager.css" />
+    <Content Include="css\base.css" />
+    <Content Include="data\app_database.xml" />
+    <Content Include="data\conf\app_config.xml" />
+    <Content Include="data\conf\app_database.xml" />
+    <Content Include="flash\~imageshow.swf" />
+    <Content Include="Global.asax" />
+    <Content Include="html\css\base.css" />
+    <Content Include="html\exchange.html" />
+    <Content Include="html\images\an.gif" />
+    <Content Include="html\images\anniu.jpg" />
+    <Content Include="html\images\dingdanchenggong.gif" />
+    <Content Include="html\images\exchange_anniu.gif" />
+    <Content Include="html\images\guohui.gif" />
+    <Content Include="html\images\hean.gif" />
+    <Content Include="html\images\jfdh-bottom.gif" />
+    <Content Include="html\images\jfdh-top.gif" />
+    <Content Include="html\images\jfdh_title_dd.gif" />
+    <Content Include="html\images\jfdh_title_dt.gif" />
+    <Content Include="html\images\left_bottom.gif" />
+    <Content Include="html\images\left_class.gif" />
+    <Content Include="html\images\left_title.gif" />
+    <Content Include="html\images\login.gif" />
+    <Content Include="html\images\logo.gif" />
+    <Content Include="html\images\member_left.gif" />
+    <Content Include="html\images\member_nav.gif" />
+    <Content Include="html\images\member_nav_t.gif" />
+    <Content Include="html\images\pic_01.jpg" />
+    <Content Include="html\images\pic_02.jpg" />
+    <Content Include="html\images\qgwcdh.gif" />
+    <Content Include="html\images\query_an.gif" />
+    <Content Include="html\images\reg_bottom.gif" />
+    <Content Include="html\images\reg_top.gif" />
+    <Content Include="html\images\sign_bg.jpg" />
+    <Content Include="html\images\tanchu_guanbi.gif" />
+    <Content Include="html\images\tanchu_title.gif" />
+    <Content Include="html\images\title_bg.gif" />
+    <Content Include="html\images\yzm.gif" />
+    <Content Include="html\images\zhmm.gif" />
+    <Content Include="html\index.html" />
+    <Content Include="html\integral.html" />
+    <Content Include="html\js\DD_belatedPNG.js" />
+    <Content Include="html\js\jquery.min.js" />
+    <Content Include="html\member.html" />
+    <Content Include="html\news_show_01.html" />
+    <Content Include="html\news_show_02.html" />
+    <Content Include="html\news_show_03.html" />
+    <Content Include="html\query.html" />
+    <Content Include="html\record.html" />
+    <Content Include="html\reg.html" />
+    <Content Include="html\shop.html" />
+    <Content Include="html\shop_2.html" />
+    <Content Include="html\shop_3.html" />
+    <Content Include="html\shop_show.html" />
+    <Content Include="html\sign.html" />
+    <Content Include="html\wjmm.html" />
+    <Content Include="html\wjmm_2.html" />
+    <Content Include="html\xgmm.html" />
+    <Content Include="html\xgmm_2.html" />
+    <Content Include="images\AddPostAddress.jpg" />
+    <Content Include="images\an.gif" />
+    <Content Include="images\anniu.jpg" />
+    <Content Include="images\DelAddress.jpg" />
+    <Content Include="images\Delete.gif" />
+    <Content Include="images\dingdanchenggong.gif" />
+    <Content Include="images\exchange_anniu.gif" />
+    <Content Include="images\guohui.gif" />
+    <Content Include="images\hean.gif" />
+    <Content Include="images\jfdh-bottom.gif" />
+    <Content Include="images\jfdh-top.gif" />
+    <Content Include="images\jfdh_title_dd.gif" />
+    <Content Include="images\jfdh_title_dt.gif" />
+    <Content Include="images\left_bottom.gif" />
+    <Content Include="images\left_class.gif" />
+    <Content Include="images\left_class001.gif" />
+    <Content Include="images\left_class002.gif" />
+    <Content Include="images\left_class003.gif" />
+    <Content Include="images\left_class004.gif" />
+    <Content Include="images\left_class005.gif" />
+    <Content Include="images\left_class006.gif" />
+    <Content Include="images\left_class007.gif" />
+    <Content Include="images\left_class008.gif" />
+    <Content Include="images\left_title.gif" />
+    <Content Include="images\login.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\member_left.gif" />
+    <Content Include="images\member_nav.gif" />
+    <Content Include="images\member_nav_t.gif" />
+    <Content Include="images\pic_01.jpg" />
+    <Content Include="images\pic_02.jpg" />
+    <Content Include="images\qgwcdh.gif" />
+    <Content Include="images\query_an.gif" />
+    <Content Include="images\query_an2.gif" />
+    <Content Include="images\reg_bottom.gif" />
+    <Content Include="images\reg_top.gif" />
+    <Content Include="images\sign_bg.jpg" />
+    <Content Include="images\tanchu_guanbi.gif" />
+    <Content Include="images\tanchu_title.gif" />
+    <Content Include="images\title_bg.gif" />
+    <Content Include="images\yzm.gif" />
+    <Content Include="images\zhmm.gif" />
+    <None Include="jQuery\jquery-1.6.2-vsdoc.js" />
+    <Content Include="jQuery\jquery-1.6.2.js" />
+    <Content Include="jQuery\jquery-1.6.2.min.js" />
+    <Content Include="jQuery\jquery.cookie.js" />
+    <Content Include="jQuery\json2.js" />
+    <Content Include="js\DD_belatedPNG.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="Lib\Admin\hsopPlatform.dll" />
+    <Content Include="Lib\Admin\HsPlatform.dll" />
+    <Content Include="Lib\Admin\Readme.txt" />
+    <Content Include="Lib\AspNetPager.dll" />
+    <Content Include="Lib\AspNetPager.xml" />
+    <Content Include="Lib\LitJSON.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="obj\Debug\Maochong.Web.dll" />
+    <Content Include="obj\Debug\Maochong.Web.pdb" />
+    <Content Include="obj\Debug\svn.csproj.FileListAbsolute.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web.Master.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web.Master.designer.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax\ShopCart.ashx" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\svn.csprojResolveAssemblyReference.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.Master" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Maochong.BLL\Maochong.BLL.csproj">
+      <Project>{35c2abdc-8a96-4bf8-8c9a-36c79fc9246b}</Project>
+      <Name>Maochong.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Maochong.Lib\Maochong.Lib.csproj">
+      <Project>{b0fd1e35-2f32-4dc4-b529-8121f4a0e0c3}</Project>
+      <Name>Maochong.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Maochong.Model\Maochong.Model.csproj">
+      <Project>{1b1539f9-3ab9-4377-9d96-a34a8a511939}</Project>
+      <Name>Maochong.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\flash\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9178</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8160/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

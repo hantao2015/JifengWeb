@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.BLL", "..\Maochong.BLL\Maochong.BLL.csproj", "{35C2ABDC-8A96-4BF8-8C9A-36C79FC9246B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.DAL", "..\Maochong.DAL\Maochong.DAL.csproj", "{C6FCADB8-762B-4DBD-BDA1-C7B6D122E51E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.DBUtility", "..\Maochong.DBUtility\Maochong.DBUtility.csproj", "{DEA7905A-A2EA-409F-8B32-07E425625704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.Lib", "..\Maochong.Lib\Maochong.Lib.csproj", "{B0FD1E35-2F32-4DC4-B529-8121F4A0E0C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.Model", "..\Maochong.Model\Maochong.Model.csproj", "{1B1539F9-3AB9-4377-9D96-A34A8A511939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svn", "svn\svn.csproj", "{97C250E5-D25D-48BB-BD12-AAF3380F687D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C2ABDC-8A96-4BF8-8C9A-36C79FC9246B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C2ABDC-8A96-4BF8-8C9A-36C79FC9246B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C2ABDC-8A96-4BF8-8C9A-36C79FC9246B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C2ABDC-8A96-4BF8-8C9A-36C79FC9246B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FCADB8-762B-4DBD-BDA1-C7B6D122E51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FCADB8-762B-4DBD-BDA1-C7B6D122E51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FCADB8-762B-4DBD-BDA1-C7B6D122E51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FCADB8-762B-4DBD-BDA1-C7B6D122E51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA7905A-A2EA-409F-8B32-07E425625704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA7905A-A2EA-409F-8B32-07E425625704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA7905A-A2EA-409F-8B32-07E425625704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA7905A-A2EA-409F-8B32-07E425625704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FD1E35-2F32-4DC4-B529-8121F4A0E0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FD1E35-2F32-4DC4-B529-8121F4A0E0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FD1E35-2F32-4DC4-B529-8121F4A0E0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FD1E35-2F32-4DC4-B529-8121F4A0E0C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1539F9-3AB9-4377-9D96-A34A8A511939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1539F9-3AB9-4377-9D96-A34A8A511939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1539F9-3AB9-4377-9D96-A34A8A511939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1539F9-3AB9-4377-9D96-A34A8A511939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

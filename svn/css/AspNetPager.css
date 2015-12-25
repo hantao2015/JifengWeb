@@ -1,0 +1,23 @@
+﻿/*
+  AspNetPage分页控件样式文件
+  使用方法:
+  1.引入样式表
+    <style type="text/css">具体样式</style>或
+    <link href="单独样式表文件AspNetPager.css" rel="stylesheet" type="text/css" />
+
+  2.设置AspNetPager控件属性：CssClass="paginator" CurrentPageButtonClass="cpb"
+*/
+
+/*网易风格：*/
+.anpager .cpb {background:#1F3A87 none repeat scroll 0 0;border:1px solid #CCCCCC;color:#FFFFFF;font-weight:bold;margin:5px 4px 0 0;padding:4px 5px 0;}
+.anpager a {background:#FFFFFF none repeat scroll 0 0;border:1px solid #CCCCCC;color:#1F3A87;margin:5px 4px 0 0;padding:4px 5px 0;text-decoration:none}
+.anpager a:hover{background:#1F3A87 none repeat scroll 0 0;border:1px solid #1F3A87;color:#FFFFFF;}
+/*属性设置：CssClass="anpager" CurrentPageButtonClass="cpb"*/
+
+ 
+/*拍拍风格：*/
+.paginator{padding:30px 0; text-align:center; font-weight:bold;}
+.paginator a{color:#777; border:#cacaca 1px solid; background:#f3f3f3; margin:0 3px; padding:3px 6px 2px 6px;}
+.paginator a:hover{color:#d28f00; background:#FFF;}
+.paginator .cpb{color:#d28f00; background:#FFF; margin:0 3px; padding:3px 6px 2px 6px; border:#cacaca 1px solid;}
+/*属性设置：CssClass="paginator" CurrentPageButtonClass="cpb"*/
