@@ -1,33 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using Maochong.BLL;
 using Maochong.Lib;
 using Maochong.Model;
  
+using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
- 
+using System.Web.UI;
 using System.Web.UI.HtmlControls;
- 
+using System.Web.UI.WebControls;
 
-namespace Maochong.Web
+namespace MaoChong.Web
 {
-    public   partial class Web : MasterPage
+    public partial class Web : System.Web.UI.MasterPage
     {
+
         private List<ItemModel> _allItemList = null;
         private List<ItemModel> _allMenuList = null;
-        //protected ContentPlaceHolder ContentPlaceHolder1;
-        //protected HtmlForm form1;
-        //protected ContentPlaceHolder head;
+     
+      
         private ItemBLL itemBll = new ItemBLL();
-        protected Literal Literal_userName;
-        protected PlaceHolder PlaceHolder_login;
-        protected PlaceHolder PlaceHolder_logout;
+      
 
         public void CheckLogin()
         {
@@ -37,35 +32,7 @@ namespace Maochong.Web
             }
         }
 
-        public string GetCurrentNavigation(List<ItemModel> _allMenuList, int itemID)
-        {
-            // <> c__DisplayClass18 class2;
-            //List<ItemModel> list = Enumerable.Where<ItemModel>(_allMenuList, new Func<ItemModel, bool>(class2, (IntPtr)this.< GetCurrentNavigation > b__16)).ToList<ItemModel>();
-            //if ((list == null) || (list.Count == 0))
-            //{
-            //    return "";
-            //}
-            //ItemModel currentModel = list[0];
-            //List<ItemModel> list2 = Enumerable.Where<ItemModel>(_allMenuList, new Func<ItemModel, bool>(class2, (IntPtr)this.< GetCurrentNavigation > b__17)).ToList<ItemModel>();
-            //if (string.IsNullOrEmpty(currentModel.Url))
-            //{
-            //    if ((list2 == null) || (list2.Count == 0))
-            //    {
-            //        return ("<a href='" + this.GetMenuLink(currentModel) + "'>" + currentModel.Name + " &gt;</a>");
-            //    }
-            //    return ("<a href='" + this.GetMenuLink(list2[0]) + "'>" + currentModel.Name + " &gt;</a>");
-            //}
-            //if (currentModel.Url == "#")
-            //{
-            //    if ((list2 == null) || (list2.Count == 0))
-            //    {
-            //        return ("<a href='" + this.GetMenuLink(currentModel) + "'>" + currentModel.Name + " &gt;</a>");
-            //    }
-            //    return ("<a href='" + this.GetMenuLink(list2[0]) + "'>" + currentModel.Name + " &gt;</a>");
-            //}
-            //return ("<a href='" + this.GetMenuLink(currentModel) + "'>" + currentModel.Name + " &gt;</a>");
-            return "";
-        }
+    
 
         public string GetLenghStr(object input, int strLength, string emptyStr)
         {
@@ -107,138 +74,8 @@ namespace Maochong.Web
             return string.Concat(new object[] { _itemModel.Url, "?ItemFID=", _itemModel.Fid, "&ItemID=", _itemModel.ID });
         }
 
-        public string LeftMenuHtml(int itemFID, int itemID)
-        {
-            //int num;
-            //ItemModel model2;
-            //Func<ItemModel, bool> func = null;
-            //Func<ItemModel, bool> func2 = null;
-            //Func<ItemModel, bool> func3 = null;
-            //Func<ItemModel, bool> func4 = null;
-            //<> c__DisplayClasse classe;
-            //StringBuilder builder = new StringBuilder("");
-            //List<ItemModel> allMenuList = this.AllMenuList;
-            //if (itemFID == 0)
-            //{
-            //    if (func == null)
-            //    {
-            //        func = new Func<ItemModel, bool>(classe, (IntPtr)this.< LeftMenuHtml > b__6);
-            //    }
-            //    ItemModel model = Enumerable.Where<ItemModel>(this.AllMenuList, func).ToList<ItemModel>()[0];
-            //    if (func2 == null)
-            //    {
-            //        func2 = new Func<ItemModel, bool>(classe, (IntPtr)this.< LeftMenuHtml > b__7);
-            //    }
-            //    List<ItemModel> list2 = Enumerable.Where<ItemModel>(this.AllMenuList, func2).ToList<ItemModel>();
-            //    builder.AppendLine("<span>" + model.Alias + "</span>");
-            //    builder.AppendLine("<dt>" + model.Name + "</dt>");
-            //    if ((list2 != null) && (list2.Count > 0))
-            //    {
-            //        for (num = 0; num < list2.Count; num++)
-            //        {
-            //            model2 = list2[num];
-            //            if (string.IsNullOrEmpty(model.Url))
-            //            {
-            //                if (num == 0)
-            //                {
-            //                    builder.AppendLine("<dd class='zuo_nav'>");
-            //                }
-            //                else
-            //                {
-            //                    builder.AppendLine("<dd>");
-            //                }
-            //            }
-            //            else if (model.Url == "#")
-            //            {
-            //                if (num == 0)
-            //                {
-            //                    builder.AppendLine("<dd class='zuo_nav'>");
-            //                }
-            //                else
-            //                {
-            //                    builder.AppendLine("<dd>");
-            //                }
-            //            }
-            //            else
-            //            {
-            //                builder.AppendLine("<dd>");
-            //            }
-            //            builder.AppendLine("<a href='" + this.GetMenuLink(model2) + "'>");
-            //            builder.AppendLine(model2.Name);
-            //            builder.AppendLine("</a>");
-            //            builder.AppendLine("</dd>");
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    if (func3 == null)
-            //    {
-            //        func3 = new Func<ItemModel, bool>(classe, (IntPtr)this.< LeftMenuHtml > b__8);
-            //    }
-            //    ItemModel model3 = Enumerable.Where<ItemModel>(this.AllMenuList, func3).ToList<ItemModel>()[0];
-            //    if (func4 == null)
-            //    {
-            //        func4 = new Func<ItemModel, bool>(classe, (IntPtr)this.< LeftMenuHtml > b__9);
-            //    }
-            //    List<ItemModel> list3 = Enumerable.Where<ItemModel>(this.AllMenuList, func4).ToList<ItemModel>();
-            //    builder.AppendLine("<span>" + model3.Alias + "</span>");
-            //    builder.AppendLine("<dt>" + model3.Name + "</dt>");
-            //    if ((list3 != null) && (list3.Count > 0))
-            //    {
-            //        for (num = 0; num < list3.Count; num++)
-            //        {
-            //            model2 = list3[num];
-            //            if (model2.ID == itemID)
-            //            {
-            //                builder.AppendLine("<dd class='zuo_nav'>");
-            //            }
-            //            else
-            //            {
-            //                builder.AppendLine("<dd>");
-            //            }
-            //            builder.AppendLine("<a href='" + this.GetMenuLink(model2) + "'>");
-            //            builder.AppendLine(model2.Name);
-            //            builder.AppendLine("</a>");
-            //            builder.AppendLine("</dd>");
-            //        }
-            //    }
-            //}
-            //  return builder.ToString();
-            return "";
-        }
-
-        public string NavigationHtml(int itemID)
-        {
-            //Func<ItemModel, bool> func = null;
-            //<> c__DisplayClass14 class2;
-            //StringBuilder builder = new StringBuilder();
-            //List<ItemModel> allMenuList = this.AllMenuList;
-            //List<string> list2 = new List<string>();
-            //List<ItemModel> currentList = Enumerable.Where<ItemModel>(allMenuList, new Func<ItemModel, bool>(class2, (IntPtr)this.< NavigationHtml > b__10)).ToList<ItemModel>();
-            //if ((currentList == null) || (currentList.Count == 0))
-            //{
-            //    return "";
-            //}
-            //list2.Add("<span>" + currentList[0].Name + "</span>");
-            //for (List<ItemModel> farthModel = Enumerable.Where<ItemModel>(allMenuList, new Func<ItemModel, bool>(class2, (IntPtr)this.< NavigationHtml > b__11)).ToList<ItemModel>(); (farthModel != null) && (farthModel.Count > 0); farthModel = Enumerable.Where<ItemModel>(allMenuList, func).ToList<ItemModel>())
-            //{
-            //    list2.Add(this.GetCurrentNavigation(allMenuList, farthModel[0].ID));
-            //    if (func == null)
-            //    {
-            //        func = new Func<ItemModel, bool>(class2, (IntPtr)this.< NavigationHtml > b__12);
-            //    }
-            //}
-            //list2.Add("<a href=\"Index.aspx\">首页 &gt;</a>");
-            //list2.Reverse();
-            //foreach (string str in list2)
-            //{
-            //    builder.AppendLine(str);
-            //}
-            //return builder.ToString();
-            return "";
-        }
-
+     
+   
         public string ObjectToShortDate(object input, string nullOrEmptyInfo)
         {
             if (string.IsNullOrEmpty(nullOrEmptyInfo))
@@ -322,76 +159,7 @@ namespace Maochong.Web
             return true;
         }
 
-        public string TopMenuHtml()
-        {
-            //StringBuilder builder = new StringBuilder("");
-            //List<ItemModel> allMenuList = this.AllMenuList;
-            //if (CS$<> 9__CachedAnonymousMethodDelegate2 == null)
-            //{
-            //    CS$<> 9__CachedAnonymousMethodDelegate2 = new Func<ItemModel, bool>(null, (IntPtr) < TopMenuHtml > b__0);
-            //}
-            //List<ItemModel> list2 = Enumerable.Where<ItemModel>(allMenuList, CS$<> 9__CachedAnonymousMethodDelegate2).ToList<ItemModel>();
-            //using (List<ItemModel>.Enumerator enumerator = list2.GetEnumerator())
-            //{
-            //    Func<ItemModel, bool> func = null;
-            //    ItemModel tempModel;
-            //    while (enumerator.MoveNext())
-            //    {
-            //        tempModel = enumerator.Current;
-            //        builder.AppendLine("<li>");
-            //        if (func == null)
-            //        {
-            //            <> c__DisplayClass4 class2;
-            //            func = new Func<ItemModel, bool>(class2, (IntPtr)this.< TopMenuHtml > b__1);
-            //        }
-            //        List<ItemModel> list3 = Enumerable.Where<ItemModel>(allMenuList, func).ToList<ItemModel>();
-            //        if ((list3 == null) || (list3.Count == 0))
-            //        {
-            //            builder.AppendLine("<a href='" + this.GetMenuLink(tempModel) + "'>");
-            //            if (tempModel.Name.Contains("美人学社"))
-            //            {
-            //                builder.AppendLine("<span>" + tempModel.Name + "<span>");
-            //            }
-            //            else
-            //            {
-            //                builder.AppendLine(tempModel.Name);
-            //            }
-            //            builder.AppendLine("</a>");
-            //        }
-            //        else
-            //        {
-            //            if (string.IsNullOrEmpty(tempModel.Url) || (tempModel.Url == "#"))
-            //            {
-            //                builder.AppendLine("<a href='" + this.GetMenuLink(list3[0]) + "'>");
-            //            }
-            //            else
-            //            {
-            //                builder.AppendLine("<a href='" + this.GetMenuLink(tempModel) + "'>");
-            //            }
-            //            if (tempModel.Name.Contains("美人学社"))
-            //            {
-            //                builder.AppendLine("<span>" + tempModel.Name + "<span>");
-            //            }
-            //            else
-            //            {
-            //                builder.AppendLine(tempModel.Name);
-            //            }
-            //            builder.AppendLine("</a>");
-            //            builder.AppendLine("<dl>");
-            //            foreach (ItemModel model in list3)
-            //            {
-            //                builder.AppendLine("<a href='" + this.GetMenuLink(model) + "'>");
-            //                builder.AppendLine(model.Name);
-            //                builder.AppendLine("</a>");
-            //            }
-            //            builder.AppendLine("</dl>");
-            //        }
-            //        builder.AppendLine("</li>");
-            //    }
-            //}
-            //return builder.ToString();
-            return "";
-        }
+      
 
         public string TopMenuHtml(int itemFID, int itemID)
         {
@@ -446,7 +214,4 @@ namespace Maochong.Web
             }
         }
     }
-
 }
-
-

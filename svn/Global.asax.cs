@@ -11,12 +11,13 @@ namespace Maochong.Web
 {
     public class Global : System.Web.HttpApplication
     {
+         
 
         protected void Application_Start(object sender, EventArgs e)
         {
             try
             {
-                HsopCmsEnvironment.InitForWebApplication(base.Server.MapPath("/"), "svn", "svn.log", @"\cmsdoc\log\", true);
+                HsopCmsEnvironment.InitForWebApplication(base.Server.MapPath("/svn"), "svn", "svn.log", @"cmsdoc\log\", true);
             }
             catch (Exception exception)
             {
