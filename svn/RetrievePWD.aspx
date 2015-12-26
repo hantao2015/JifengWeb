@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web.Master" AutoEventWireup="true" CodeBehind="RetrievePWD.aspx.cs" Inherits="MaoChong.Web.RetrievePWD" %>
 <%@ MasterType VirtualPath="~/Web.Master" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -9,7 +8,7 @@
         <div class="reg_title">
             <dl>
                 <dt>
-                    忘记密码
+                    获取密码
                 </dt>
             </dl>
         </div>
@@ -17,25 +16,26 @@
             <table width="100%" border="0" cellspacing="12" cellpadding="0">
                 <tr>
                     <td colspan="3">
-                        <b>请填写您注册时用的邮箱：</b>
+                        <b>请填写您的工号：</b>
                     </td>
                 </tr>
                 <tr>
                     <td width="40" align="left">
-                        <span>*</span>手机
+                        <span>*工号</span>
                     </td>
                     <td width="208">
-                        <asp:TextBox ID="txt_mobile" runat="server" CssClass="srk" MaxLength="15"></asp:TextBox>
+                       <%-- <asp:TextBox ID="txt_mobile" runat="server" CssClass="srk" MaxLength="15"></asp:TextBox>--%>
+                       <input name="user" type="text" MaxLength="15" class="srk">
                     </td>
                     <td width="204">
                     </td>
                 </tr>
                 <tr>
                     <td width="40" align="left">
-                        <span>*</span>邮箱
+                      <%--  <span>*</span>邮箱--%>
                     </td>
-                    <td width="208">
-                       <asp:TextBox ID="txt_email" runat="server" CssClass="srk" MaxLength="30"></asp:TextBox>
+                    <td width="208" >
+                       <%--<asp:TextBox ID="txt_email" runat="server" CssClass="srk" MaxLength="30" Visible="false"></asp:TextBox>--%>
                     </td>
                     <td width="204">
                     </td>
@@ -44,7 +44,7 @@
                     <td width="40" align="left">
                     </td>
                     <td width="208">
-                        <asp:Button ID="Button1" runat="server" Text="确定" CssClass="query_an" onclick="Button1_Click" />
+                        <asp:Button ID="Button1"  runat="server" Text="确定" CssClass="query_an"  OnClientClick="javascript:Forgetpass();" />
                     </td>
                     <td width="204">
                     </td>
@@ -54,8 +54,7 @@
                         &nbsp;
                     </td>
                     <td colspan="2">
-                        注：如未能找回密码!请立即联系客服：400-089-1622
-                    </td>
+                        注：如未能找回密码!请联系HR部门。</td>
                 </tr>
                 <tr>
                     <td height="60" colspan="3" align="left">

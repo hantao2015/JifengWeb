@@ -218,6 +218,29 @@
     <Content Include="Register.aspx" />
     <Content Include="RetrievePWD.aspx" />
     <Content Include="RetrievePWD2.aspx" />
+    <Content Include="script\base.js" />
+    <Content Include="script\calendar_display.js" />
+    <Content Include="script\CardOperation.js" />
+    <Content Include="script\cms.js" />
+    <Content Include="script\cmsmenu.js" />
+    <Content Include="script\CmsScript.js" />
+    <Content Include="script\cmstree.js" />
+    <Content Include="script\CmsTreeview.js" />
+    <Content Include="script\cn\calendar_display.js" />
+    <Content Include="script\cn\Valid.js" />
+    <Content Include="script\en\calendar_display.js" />
+    <Content Include="script\en\Valid.js" />
+    <Content Include="script\FlowCommonScript.js" />
+    <Content Include="script\jquery\jquery-1.3.2.js" />
+    <Content Include="script\jquery\jquery-1.3.2.min.js" />
+    <Content Include="script\jscommon.js" />
+    <Content Include="script\menu4.js" />
+    <Content Include="script\ntkoocx.js" />
+    <Content Include="script\poslib.js" />
+    <Content Include="script\readme.txt" />
+    <Content Include="script\scrollbutton.js" />
+    <Content Include="script\toolbar.htc" />
+    <Content Include="script\Valid.js" />
     <Content Include="ShopCart.aspx" />
     <Content Include="ShopConfirm.aspx" />
     <Content Include="ShopList.aspx" />
@@ -430,6 +453,10 @@
     <Content Include="obj\Debug\svn.csprojResolveAssemblyReference.cache" />
     <Content Include="ProductImg.ashx" />
     <Content Include="ProductTypeImg.ashx" />
+    <Content Include="script\cn\vssver2.scc" />
+    <Content Include="script\en\vssver2.scc" />
+    <Content Include="script\jquery\vssver2.scc" />
+    <Content Include="script\vssver2.scc" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

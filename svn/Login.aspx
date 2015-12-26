@@ -24,7 +24,7 @@
                 <table width="100%" border="0" cellspacing="10" cellpadding="0">
                     <tr>
                         <td width="95" align="right">
-                            手机/邮箱
+                            员工工号
                         </td>
                         <td colspan="2">
                             <asp:TextBox ID="txt_loginName" runat="server" CssClass="srk"></asp:TextBox>
@@ -83,7 +83,7 @@
                     </tr>
                     <tr>
                         <td colspan="4">
-                            <font><b>提示：</b>还不是VANCL会员？点击这里 <b><a href="Register.aspx">免费注册</a></b></font>
+                            <font><b>提示：</b>密码和HR系统相同 <b><%--<a href="Register.aspx">免费注册</a>--%></b></font>
                         </td>
                     </tr>
                 </table>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web.Master" AutoEventWireup="true" CodeBehind="RetrievePWD2.aspx.cs" Inherits="MaoChong.Web.RetrievePWD2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $(".reg_an:eq(0)").click(function() {
             window.location = "Login.aspx";
@@ -14,7 +14,7 @@
         <div class="reg_title">
             <dl>
                 <dt>
-                    忘记密码
+                    获取密码
                 </dt>
             </dl>
         </div>
