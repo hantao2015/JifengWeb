@@ -73,12 +73,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccountInfo.aspx" />
     <Content Include="CheckCode\CodeImage.aspx" />
     <Content Include="css\AspNetPager.css" />
     <Content Include="css\base.css" />
     <Content Include="data\app_database.xml" />
     <Content Include="data\conf\app_config.xml" />
     <Content Include="data\conf\app_database.xml" />
+    <Content Include="Exchange.aspx" />
     <Content Include="flash\~imageshow.swf" />
     <Content Include="Global.asax" />
     <Content Include="html\css\base.css" />
@@ -176,6 +178,10 @@
     <Content Include="images\yzm.gif" />
     <Content Include="images\zhmm.gif" />
     <None Include="jQuery\jquery-1.6.2-vsdoc.js" />
+    <Content Include="Integral.aspx" />
+    <Content Include="IntegralNote1.aspx" />
+    <Content Include="IntegralNote2.aspx" />
+    <Content Include="IntegralNote3.aspx" />
     <Content Include="jQuery\jquery-1.6.2.js" />
     <Content Include="jQuery\jquery-1.6.2.min.js" />
     <Content Include="jQuery\jquery.cookie.js" />
@@ -189,6 +195,9 @@
     <Content Include="Lib\AspNetPager.xml" />
     <Content Include="Lib\LitJSON.dll" />
     <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="ModifyPWD.aspx" />
+    <Content Include="ModifyPWD2.aspx" />
     <Content Include="My97DatePicker\calendar.js" />
     <Content Include="My97DatePicker\lang\en.js" />
     <Content Include="My97DatePicker\lang\zh-cn.js" />
@@ -204,9 +213,30 @@
     <Content Include="obj\Debug\Maochong.Web.dll" />
     <Content Include="obj\Debug\Maochong.Web.pdb" />
     <Content Include="obj\Debug\svn.csproj.FileListAbsolute.txt" />
+    <Content Include="PurchaseHistory.aspx" />
+    <Content Include="Query.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RetrievePWD.aspx" />
+    <Content Include="RetrievePWD2.aspx" />
+    <Content Include="ShopCart.aspx" />
+    <Content Include="ShopConfirm.aspx" />
+    <Content Include="ShopList.aspx" />
+    <Content Include="Shopshow.aspx" />
+    <Content Include="ShopSubmit.aspx" />
+    <Content Include="ShopSubmitCopy.aspx" />
+    <Content Include="UCLeftmenu1.ascx" />
+    <Content Include="UCLeftmenu2.ascx" />
+    <Content Include="UCLeftmenu3.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountInfo.aspx.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountInfo.aspx.designer.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckCode\CodeImage.aspx.cs">
       <DependentUpon>CodeImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,8 +244,43 @@
     <Compile Include="CheckCode\CodeImage.aspx.designer.cs">
       <DependentUpon>CodeImage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Exchange.aspx.cs">
+      <DependentUpon>Exchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange.aspx.designer.cs">
+      <DependentUpon>Exchange.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Integral.aspx.cs">
+      <DependentUpon>Integral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integral.aspx.designer.cs">
+      <DependentUpon>Integral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntegralNote1.aspx.cs">
+      <DependentUpon>IntegralNote1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntegralNote1.aspx.designer.cs">
+      <DependentUpon>IntegralNote1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntegralNote2.aspx.cs">
+      <DependentUpon>IntegralNote2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntegralNote2.aspx.designer.cs">
+      <DependentUpon>IntegralNote2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntegralNote3.aspx.cs">
+      <DependentUpon>IntegralNote3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntegralNote3.aspx.designer.cs">
+      <DependentUpon>IntegralNote3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -224,7 +289,132 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPWD.aspx.cs">
+      <DependentUpon>ModifyPWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyPWD.aspx.designer.cs">
+      <DependentUpon>ModifyPWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPWD2.aspx.cs">
+      <DependentUpon>ModifyPWD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyPWD2.aspx.designer.cs">
+      <DependentUpon>ModifyPWD2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImg.ashx.cs">
+      <DependentUpon>ProductImg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTypeImg.ashx.cs">
+      <DependentUpon>ProductTypeImg.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseHistory.aspx.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseHistory.aspx.designer.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Query.aspx.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Query.aspx.designer.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RetrievePWD.aspx.cs">
+      <DependentUpon>RetrievePWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RetrievePWD.aspx.designer.cs">
+      <DependentUpon>RetrievePWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RetrievePWD2.aspx.cs">
+      <DependentUpon>RetrievePWD2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RetrievePWD2.aspx.designer.cs">
+      <DependentUpon>RetrievePWD2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopCart.aspx.cs">
+      <DependentUpon>ShopCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopCart.aspx.designer.cs">
+      <DependentUpon>ShopCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopConfirm.aspx.cs">
+      <DependentUpon>ShopConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopConfirm.aspx.designer.cs">
+      <DependentUpon>ShopConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopList.aspx.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopList.aspx.designer.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shopshow.aspx.cs">
+      <DependentUpon>Shopshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shopshow.aspx.designer.cs">
+      <DependentUpon>Shopshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopSubmit.aspx.cs">
+      <DependentUpon>ShopSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopSubmit.aspx.designer.cs">
+      <DependentUpon>ShopSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopSubmitCopy.aspx.cs">
+      <DependentUpon>ShopSubmitCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopSubmitCopy.aspx.designer.cs">
+      <DependentUpon>ShopSubmitCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCLeftmenu1.ascx.cs">
+      <DependentUpon>UCLeftmenu1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCLeftmenu1.ascx.designer.cs">
+      <DependentUpon>UCLeftmenu1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCLeftmenu2.ascx.cs">
+      <DependentUpon>UCLeftmenu2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCLeftmenu2.ascx.designer.cs">
+      <DependentUpon>UCLeftmenu2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCLeftmenu3.ascx.cs">
+      <DependentUpon>UCLeftmenu3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCLeftmenu3.ascx.designer.cs">
+      <DependentUpon>UCLeftmenu3.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Web.Master.cs">
       <DependentUpon>Web.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,6 +428,8 @@
     <Content Include="images\Thumbs.db" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\svn.csprojResolveAssemblyReference.cache" />
+    <Content Include="ProductImg.ashx" />
+    <Content Include="ProductTypeImg.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
