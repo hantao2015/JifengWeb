@@ -44,10 +44,10 @@
         </div>
         <div class="zuo_guize">
             <ul>
-                <li>
-                    ·<a href="IntegralNote1.aspx">如何获得积分</a>
+            ·<a href="IntegralNote1.aspx">参加资格</a>
                 </li>
                 <li>
+                    ·   <li>
                     ·<a href="IntegralNote2.aspx">积分规则</a>
                 </li>
                 <li>

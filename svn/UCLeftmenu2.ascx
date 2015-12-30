@@ -35,7 +35,7 @@
         </li>
         <li>
              <div class="member_nav_t" >
-                <a href="Exchange.aspx">正金币、刮刮卡<br/><p style="font-size:12px; padding-left:25px;">(兑换积分) </p></a>
+                <a href="Exchange.aspx">刮刮卡<br/><p style="font-size:12px; padding-left:25px;">(兑换积分) </p></a>
             </div>
         </li>
     </ul>
