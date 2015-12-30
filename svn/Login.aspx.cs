@@ -6,10 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Maochong.BLL;
 using Maochong.Model;
+using HS.Platform;
 
 namespace MaoChong.Web
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : Page
     {
     
         protected void Page_Load(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace MaoChong.Web
             }
             else
             {
+               //以下Mobile代表工号
                 string mobile = this.txt_loginName.Text.Trim();
                 string str2 = this.txt_password.Text.Trim();
                 string str3 = this.txt_code.Text.Trim();
@@ -70,23 +72,36 @@ namespace MaoChong.Web
                 }
                 if (modelByMobile == null)
                 {
-                    base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('会员未注册,请点击免费注册!');</script>");
-                }
-                else if (modelByMobile.Password != str2)
-                {
-                    base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('密码错误，请重新输入!');</script>");
+                    base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('会员未注册,请联系HR部门进行注册!');</script>");
                 }
                 else
                 {
+
+                    try
+                    {
+                        CmsPassport pst = CmsPassport.GenerateCmsPassport(mobile, str2, Convert.ToString(HttpContext.Current.Request.Params["REMOTE_ADDR"]));
+                        modelByMobile.Password = str2;
+                    }
+                       
+                    catch (Exception ex)
+                    {
+                        base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('"+ "对不起，密码错误"+ "');</script>");
+                        return;
+                    }
+
+                   
+                   
                     this.Session["webUser"] = modelByMobile;
-                    if (modelByMobile.InfoComplete == 0)
-                    {
-                        base.Response.Redirect("~/AccountInfo.aspx");
-                    }
-                    else
-                    {
-                        base.Response.Redirect("~/Integral.aspx");
-                    }
+                   
+                    base.Response.Redirect("~/Integral.aspx");
+                    //if (modelByMobile.InfoComplete == 0)
+                    //{
+                    //    base.Response.Redirect("~/AccountInfo.aspx");
+                    //}
+                    //else
+                    //{
+                    //    base.Response.Redirect("~/Integral.aspx");
+                    //}
                 }
             }
         }

@@ -7,7 +7,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>员工积分</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+ 
+    <meta name="viewport"content="width=device-width"/>
     <meta name="keywords" content="员工积分,员工积分网站" />
     <meta name="description" content="员工积分网站" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
@@ -172,7 +173,7 @@
     <!--尾巴-->
     <div id="footer">
         <dl>
-            <dt>©2012 上海丽章版权所有<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120331093136513" target="_blank"><img src="images/guohui.gif" alt="" /></a><span>沪ICP备0000000000号</span></dt>
+            <dt>©2012 上海丽章版权所有<a href="#" target="_blank"><img src="images/guohui.gif" alt="" /></a><span>沪ICP备0000000000号</span></dt>
             <dd>
                 <a href="#" target="_blank">法律信息</a>
                 <a href="#" target="_blank">免责声明</a>
