@@ -435,7 +435,7 @@
                         </tr>
                         <tr>
                             <td align="right" valign="middle">
-                                <span>*</span>手机号码
+                                <span>*</span>工号
                             </td>
                             <td>
                                 <div class="jsrk">

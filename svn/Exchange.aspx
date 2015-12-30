@@ -62,7 +62,7 @@
                         </table>
                     </div>
                     <div class="exchange_tishi">
-                        <span>提示：</span>登录www. cpbeauty.com.cn注册员工积分会员后登录"我的账户"，左侧点击"正金币 刮刮卡"输入JB加XXXXX-XXXXX防伪识别码。例：JB12345-123456
+                        <span>提示：</span>登录员工积分系统"我的账户"，左侧点击"正金币 刮刮卡"输入JB加XXXXX-XXXXX防伪识别码。例：JB12345-123456
                     </div>
                 </div>
             </div>

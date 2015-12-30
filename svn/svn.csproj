@@ -457,6 +457,7 @@
     <Content Include="script\en\vssver2.scc" />
     <Content Include="script\jquery\vssver2.scc" />
     <Content Include="script\vssver2.scc" />
+    <None Include="Properties\PublishProfiles\svn.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
