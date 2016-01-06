@@ -17,7 +17,7 @@
             </a>
         </li>
         <li>
-            <div class="member_nav_t">
+            <div class="member_nav_t" style="visibility:hidden">
                 <a href="Exchange.aspx"> 刮刮卡<br/><p style="font-size:12px; padding-left:25px;">(兑换积分) </p></a>
             </div>
         </li>

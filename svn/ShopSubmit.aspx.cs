@@ -288,6 +288,8 @@ namespace MaoChong.Web
         protected void Page_Load(object sender, EventArgs e)
         {
             this.Master.CheckLogin();
+            this.Repeater_address.Visible = false;
+           
             if (!base.IsPostBack)
             {
                 this.Master.UpdateLoginUser();

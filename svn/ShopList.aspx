@@ -36,16 +36,16 @@
                         积分分值分类
                     </dt>
                     <dd>
-                        <a href="ShopList.aspx?IntegralID=1" class="jfdh_title_this">1万分以下</a>
+                        <a href="ShopList.aspx?IntegralID=1" class="jfdh_title_this">100分以下</a>
                     </dd>
                     <dd>
-                        <a href="ShopList.aspx?IntegralID=2">1万分-5万分</a>
+                        <a href="ShopList.aspx?IntegralID=2">100分-500分</a>
                     </dd>
                     <dd>
-                        <a href="ShopList.aspx?IntegralID=3">5万分-10万分</a>
+                        <a href="ShopList.aspx?IntegralID=3">500分-800分</a>
                     </dd>
                     <dd class="jfdh_title_b">
-                        <a href="ShopList.aspx?IntegralID=4">10万分以上</a>
+                        <a href="ShopList.aspx?IntegralID=4">800分以上</a>
                     </dd>
                 </dl>
             </div>

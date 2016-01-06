@@ -121,7 +121,9 @@
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {//处理常用地址
+    $(document).ready(function () {//处理常用地址
+        var dom = document.getElementById("div_address");
+        
         //设置选中项，根据隐藏域值
         var $AddressID = $(":input[id*='HiddenField_AddressID']");
         var $selectedAddress = $("#tableAddress td :radio[value='" + $AddressID.val() + "']");
@@ -222,8 +224,12 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="exchange_list">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <div class="exchange_anniu">
+                        <asp:Button ID="Button1" runat="server" Text="确认兑换" CssClass="exchange_anniu_f" onclick="Button1_Click" />
+                        <input type="button" class="exchange_anniu_h" value="继续兑换" name="" onclick=" window.location = 'ShopList.aspx';" />
+                    </div>
+                    <div class="exchange_list" id="div_address" style="visibility:hidden">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" visible="false">
                             <tr class="exchange_list_title">
                                 <td>
                                     收件人信息
@@ -232,7 +238,7 @@
                         </table>
                         <div class="exchange_sxrxx">
                             <div class="exchange_sxrxx_t">
-                                <table id="tableAddress" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <table id="tableAddress" width="100%" border="0" cellspacing="0" cellpadding="0" visible="false">
                                     <tr>
                                         <td colspan="3">
                                             <b>常用地址：</b>
@@ -245,8 +251,7 @@
                                                     <input name="AddressID" type="radio" value='<%#Eval("ID") %>'/>
                                                 </td>
                                                 <td>
-                                                    <b><%#Eval("Name") %></b>&nbsp;&nbsp;<%#Eval("Province")%><%#Eval("City")%><%#Eval("MailingAddress")%>
-                                                </td>
+                                                    <b><%#Eval("Name") %></b>&nbsp;&nbsp;<%#Eval("Province")%><%#Eval("City")%><%#Eval("MailingAddress")%></td>
                                                 <td width="40" align="right">
                                                     <asp:ImageButton ID="Ibtn_DelAddress" CommandArgument='<%#Eval("ID")%>' runat="server" OnClick="Ibtn_DelAddress_Click"  OnClientClick=" return confirm('您确定要删除不？');"  ImageUrl="images/DelAddress.jpg" Visible='<%#Repeater_address.Items.Count==0? false : true %>' />
                                                 </td>
@@ -256,7 +261,7 @@
                                 </table>
                             </div>
                             <div class="exchange_sxrxx_b">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" visible="false">
                                     <tr>
                                         <td align="right" width="90">
                                             <span>*</span><b>收货人姓名：</b>
@@ -346,10 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="exchange_anniu">
-                        <asp:Button ID="Button1" runat="server" Text="确认兑换" CssClass="exchange_anniu_f" onclick="Button1_Click" />
-                        <input type="button" class="exchange_anniu_h" value="继续兑换" name="" onclick=" window.location = 'ShopList.aspx';" />
-                    </div>
+                   
                 </div>
             </div>
             <div class="clear"></div>
