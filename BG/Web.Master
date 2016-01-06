@@ -1,13 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Web.master.cs" Inherits="MaoChong.Web.Web" %>
-
- 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>员工积分</title>
- 
     <meta name="viewport"content="width=device-width"/>
     <meta name="keywords" content="员工积分,员工积分网站" />
     <meta name="description" content="员工积分网站" />
@@ -125,14 +120,14 @@
 <body>
     <form id="form1" runat="server">
     <!--头部-->
-    <div id="header">
-        <div class="logo left"><img src="images/logo.gif" width="199" height="52" /></div>
+    <div id="header" >
+        <div class="logo left"  style="visibility:hidden"><img src="images/logo.gif" width="199" height="52" /></div>
         <div class="header_right right">
             <div class="login">
                 <!-- 未登陆显示 -->
                 <asp:PlaceHolder ID="PlaceHolder_login" runat="server">
                     <div class="login_login left" style="padding-left:100px;">
-                        <a href="Login.aspx">登录</a>|
+                        <a href="Login.aspx"  style="visibility:hidden">登录</a>|
                       <%--  <a href="Register.aspx" >注册</a>|--%>
                         <a href="ShopList.aspx"><b>积分兑换</b></a>
                     </div>
@@ -142,7 +137,7 @@
                     <div class="login_this left">
                         <asp:Literal ID="Literal_userName" runat="server" Text=""></asp:Literal>
                         <a href="ShopList.aspx"><b>积分兑换</b></a>
-                        <a href="LogOut.aspx">退出</a>
+                        <a href="LogOut.aspx"  style="visibility:hidden">退出</a>
                     </div>
                 </asp:PlaceHolder>
                 
@@ -151,17 +146,14 @@
                         积分商城
                     </a>
                  </div>
-                <div class="login_400 right">
+                <div class="login_400 right"  style="visibility:hidden">
                     000-000-0000
                 </div>
             </div>
-            <div class="nav">
+            <div class="nav"  style="visibility:hidden">
                 <a href="http://www.finisar.com/" class="nav_this" target="_blank">Finisar</a>
                 <a href="http://intranet.finisar.com" target="_blank">Intranet</a>
-<%--                <a href="http://www.cpbeauty.com.cn/Activity.aspx?ItemFID=42&ItemID=43" target="_blank">活动资讯</a>
-                <a href="http://www.cpbeauty.com.cn/News.aspx?ItemFID=50&ItemID=51" target="_blank">新闻中心</a>
-                <a href="http://www.cpbeauty.com.cn/About.aspx?ItemFID=19&ItemID=57" target="_blank">关于我们</a>
-                <a href="http://www.cpbeauty.com.cn/Beauty.aspx?ItemFID=0&ItemID=60" target="_blank"><span>美人学社</span></a>--%>
+                <%----%>
             </div>
         </div>
     </div>
@@ -171,7 +163,7 @@
     </asp:ContentPlaceHolder>
     
     <!--尾巴-->
-    <div id="footer">
+    <div id="footer" style="visibility:hidden">
         <dl>
             <dt>©2012 上海丽章版权所有<a href="#" target="_blank"><img src="images/guohui.gif" alt="" /></a><span>沪ICP备0000000000号</span></dt>
             <dd>
