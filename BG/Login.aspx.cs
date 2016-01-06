@@ -93,7 +93,7 @@ namespace MaoChong.Web
                     modelByMobile.Login2type = "bg";
                     this.Session["webUser"] = modelByMobile;
                    
-                    base.Response.Redirect("~/Integral.aspx");
+                    base.Response.Redirect("~/ShopCart.aspx");
                  
                 }
             }
