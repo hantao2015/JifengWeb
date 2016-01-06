@@ -13,7 +13,8 @@ namespace MaoChong.Web
         {
             int num = 0;
             UserModel loginUser = this.Master.GetLoginUser();
-            List<ShopCartModel> modelList = new ShopCartBLL().GetModelList(loginUser.Mobile);
+
+            List<ShopCartModel> modelList = new ShopCartBLL().GetModelList(loginUser.Mobile,loginUser );
             foreach (ShopCartModel model2 in modelList)
             {
                 num += model2.Integral;

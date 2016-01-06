@@ -17,6 +17,7 @@ namespace MaoChong.Web
             if (!base.IsPostBack)
             {
                 UserModel model = this.Session["webUser"] as UserModel;
+
                 List<IntegralConsumeModel> modelList = new IntegralConsumeBLL().GetModelList(" and C3_409148801781='" + model.Mobile + "' ");
                 this.Repeater1.DataSource = modelList;
                 this.Repeater1.DataBind();

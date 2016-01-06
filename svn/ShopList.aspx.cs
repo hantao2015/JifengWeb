@@ -20,7 +20,18 @@ namespace MaoChong.Web
         public void BandProduct(int pageIndex, int typeID, int integralID)
         {
             int totalRowNum = 0;
-            List<ProductModel> list = new ProductBLL().GetModelListByPage(typeID, integralID, pageIndex, this.pageSize, string.Empty, string.Empty, out totalRowNum);
+            UserModel user = this.Master.GetLoginUser();
+            string strWhere = "";
+            if (user.Login2type == "bg")
+            {
+                strWhere = "isnull(C3_505405792608,'')='Y'";
+            }
+            else
+            {
+                strWhere = "isnull(C3_505405792608,'')<>'Y'";
+
+            }
+            List<ProductModel> list = new ProductBLL().GetModelListByPage(typeID, integralID, pageIndex, this.pageSize, strWhere, string.Empty, out totalRowNum);
             this.AspNetPager1.PageSize=this.pageSize;
             this.AspNetPager1.CurrentPageIndex=pageIndex;
             this.AspNetPager1.RecordCount=totalRowNum;

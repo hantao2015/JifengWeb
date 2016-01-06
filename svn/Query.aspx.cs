@@ -85,6 +85,16 @@ namespace MaoChong.Web
             {
                 sqlWhere = sqlWhere + " and C3_404475804593<'" + result.AddDays(1.0).ToShortDateString() + "' ";
             }
+            if (loginUser.Login2type == "bg")
+            {
+                // C3_505405981411 办公专用
+                sqlWhere = sqlWhere + "isnull(C3_505405981411,'')='Y'";
+            }
+            else
+            {
+                sqlWhere = sqlWhere + "isnull(C3_505405981411,'')<>'Y'";
+            }
+           
             return true;
         }
 

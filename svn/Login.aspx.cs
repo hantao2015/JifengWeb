@@ -72,7 +72,7 @@ namespace MaoChong.Web
                 }
                 if (modelByMobile == null)
                 {
-                    base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('会员未注册,请联系HR部门进行注册!');</script>");
+                    base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('积分会员未注册,请联系HR部门进行注册!');</script>");
                 }
                 else
                 {
@@ -89,19 +89,12 @@ namespace MaoChong.Web
                         return;
                     }
 
-                   
-                   
+
+                    modelByMobile.Login2type = "jf";
                     this.Session["webUser"] = modelByMobile;
                    
                     base.Response.Redirect("~/Integral.aspx");
-                    //if (modelByMobile.InfoComplete == 0)
-                    //{
-                    //    base.Response.Redirect("~/AccountInfo.aspx");
-                    //}
-                    //else
-                    //{
-                    //    base.Response.Redirect("~/Integral.aspx");
-                    //}
+                 
                 }
             }
         }
