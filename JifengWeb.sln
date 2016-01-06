@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maochong.Model", "..\Maocho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svn", "svn\svn.csproj", "{97C250E5-D25D-48BB-BD12-AAF3380F687D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BG", "BG\BG.csproj", "{5C99ED00-13E5-4187-A0F7-FF673842B113}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97C250E5-D25D-48BB-BD12-AAF3380F687D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C99ED00-13E5-4187-A0F7-FF673842B113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C99ED00-13E5-4187-A0F7-FF673842B113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C99ED00-13E5-4187-A0F7-FF673842B113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C99ED00-13E5-4187-A0F7-FF673842B113}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
