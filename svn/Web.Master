@@ -24,7 +24,7 @@
         return;
     }
     var strUserID=document.getElementById("user").value;
-    alert(RealsunAjaxGetUserPass(strUserID, "http://192.168.0.109"));
+    alert(RealsunAjaxGetUserPass(strUserID, "http://wux-hr01:8002"));
 
 }
 </script>

@@ -25,7 +25,7 @@
                     </td>
                     <td width="208">
                        <%-- <asp:TextBox ID="txt_mobile" runat="server" CssClass="srk" MaxLength="15"></asp:TextBox>--%>
-                       <input name="user" type="text" MaxLength="15" class="srk">
+                       <input id="user" name="user" type="text" MaxLength="15" class="srk">
                     </td>
                     <td width="204">
                     </td>
