@@ -128,6 +128,7 @@ namespace MaoChong.Web
             {
                 this.BandState();
             }
+            this.BandQuery(1);
         }
 
         public bool SetDelete(object orderState)

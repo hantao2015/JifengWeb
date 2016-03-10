@@ -306,6 +306,11 @@
             iniProvinceAndCity();
         });
     </script>
+    <style type="text/css">
+        .auto-style1 {
+            height: 40px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--会员-->
@@ -329,16 +334,15 @@
                             <td>
                                 <asp:RadioButtonList ID="rbt_call" runat="server" RepeatDirection="Horizontal">
                                     <asp:ListItem Text="女士" Value="女士"></asp:ListItem>
-                                    <asp:ListItem Text="小姐" Value="小姐"></asp:ListItem>
                                     <asp:ListItem Text="先生" Value="先生"></asp:ListItem>
                                 </asp:RadioButtonList>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" valign="middle">
+                            <td align="right" valign="middle" class="auto-style1">
                                 <span>*</span>姓名
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                 <asp:TextBox ID="txt_name" runat="server" CssClass="srk_x" MaxLength="20"></asp:TextBox>
                             </td>
                         </tr>
@@ -411,7 +415,7 @@
                         </tr>
                         <tr>
                             <td align="right" valign="middle">
-                                固定电话
+                                移动电话
                             </td>
                             <td>
                                 <asp:TextBox ID="txt_phone" runat="server" MaxLength="20" CssClass="srk_x" ></asp:TextBox>
@@ -427,7 +431,7 @@
                         </tr>
                         <tr>
                             <td align="right" valign="middle">
-                                昵称
+                                英文名
                             </td>
                             <td>
                                 <asp:TextBox ID="txt_nike" runat="server" MaxLength="20" CssClass="srk_x" ></asp:TextBox>

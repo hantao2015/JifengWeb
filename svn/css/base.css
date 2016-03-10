@@ -29,7 +29,8 @@ a:hover{color:#f25990; text-decoration:none;}
 						               .login_this b{color:#f04c88;}
 						  .login_gwc{width:90px;}
 						  .login_gwc a{display:block; background:url(../images/login.gif) no-repeat 0 5px; text-indent:25px;}
-						  .login_400{width:165px; font-family:"微软雅黑"; font-size:20px; color:#ec739e; background:url(../images/login.gif) no-repeat 0 -42px; text-align:right;}
+						  .login_400{width:165px; font-family:"微软雅黑"; font-size:20px; color:#ec739e; background:url(../images/login.gif) no-repeat 0 -42px; text-align:center;
+}
 					.nav{text-align:right; font-family:"微软雅黑"; font-size:16px;}
 						.nav a {padding-left:38px;}
 						.nav span{color:#51bfe8;}

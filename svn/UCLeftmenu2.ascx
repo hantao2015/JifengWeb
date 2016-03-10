@@ -28,7 +28,7 @@
                 </dt>
                 <dt>
                     <a href="PurchaseHistory.aspx">
-                        消费记录
+                        积分记录
                     </a>
                 </dt>
             </dl>

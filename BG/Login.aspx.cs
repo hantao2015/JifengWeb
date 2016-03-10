@@ -10,7 +10,7 @@ using HS.Platform;
 
 namespace MaoChong.Web
 {
-    public partial class Login : Page
+    public partial class Login : CmsPage
     {
     
         protected void Page_Load(object sender, EventArgs e)

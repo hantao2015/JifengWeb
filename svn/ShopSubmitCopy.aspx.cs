@@ -88,7 +88,7 @@ namespace MaoChong.Web
                 }
                 this.Master.UpdateLoginUser();
                 this.BandProduct();
-                base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('兑换成功！');</script>");
+                base.ClientScript.RegisterStartupScript(base.GetType(), "", "<script>alert('兑换完成，兑换待HR确认！');</script>");
             }
         }
 
